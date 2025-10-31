@@ -26,6 +26,8 @@ services:
       JWT_SECRET: ${JWT_SECRET:?set_in_env_file}
       # 쉼표로 여러 개 가능 (예: http://13.125.xxx.xxx,https://app.example.com)
       CORS_ORIGINS: ${PUBLIC_ORIGINS:?set_in_env_file}
+    env_file:
+      - ./checklist_project_backend/.env
     expose:
       - "8000"
     healthcheck:
