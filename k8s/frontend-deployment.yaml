@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: <ECR or Docker Hub>/checklist_frontend:latest
+          image: rkrzy/checklist-frontend:latest
           ports:
             - containerPort: 80

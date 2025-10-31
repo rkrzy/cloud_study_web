@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: fastapi
-          image: <ECR or Docker Hub>/checklist_backend:latest
+          image: rkrzy/checklist-backend:latest
           ports:
             - containerPort: 8000
           env:
